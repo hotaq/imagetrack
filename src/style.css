@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap');
+
 :root {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Sarabun', sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color: #213547;
@@ -25,4 +27,5 @@ body {
   color: transparent;
   font-weight: 600;
 }
+
 

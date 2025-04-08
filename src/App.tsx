@@ -47,7 +47,8 @@ function App() {
     district: '',
     subDistrict: ''
   })
-  const [editedImageUrl, setEditedImageUrl] = useState<string | null>(null)
+  // We'll keep the state but not use the variable directly
+  const [_editedImageUrl, setEditedImageUrl] = useState<string | null>(null)
   const [step, setStep] = useState(1)
   const [inputMethod, setInputMethod] = useState<'upload' | 'camera'>('upload')
 
@@ -106,13 +107,13 @@ function App() {
     <ThemeProvider theme={theme}>
       <Container maxWidth="md">
         <Box sx={{ my: 6 }}>
-          <Typography 
-            variant="h3" 
-            component="h1" 
-            gutterBottom 
+          <Typography
+            variant="h3"
+            component="h1"
+            gutterBottom
             align="center"
             className="gradient-text"
-            sx={{ 
+            sx={{
               mb: 4,
               fontSize: { xs: '2rem', md: '3rem' },
               textShadow: '2px 2px 4px rgba(0,0,0,0.1)'
@@ -121,10 +122,10 @@ function App() {
             ระบบ.annotator
           </Typography>
 
-          <Paper 
-            elevation={0} 
-            sx={{ 
-              p: 4, 
+          <Paper
+            elevation={0}
+            sx={{
+              p: 4,
               mb: 4,
               borderRadius: '16px',
               transition: 'transform 0.2s',
